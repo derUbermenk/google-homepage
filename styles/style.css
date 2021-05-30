@@ -1,0 +1,67 @@
+body{
+    font-family: arial, sans-serif;
+    min-width: 675px;
+}
+
+/* 
+============ 
+   Layout
+============ 
+*/
+
+/* main */
+
+/* navigation */
+
+nav, 
+.nav-group{
+    display: flex;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin: 10px;
+}
+
+.text-item{
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+    opacity: 0.75;
+}
+
+.text-item:hover,
+.text-item:focus{
+    text-decoration:underline
+}
+
+.google-apps-button{
+    background-image: url('//web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    color:#000;
+}
+
+#sign-in-text{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sign-in-button{
+    background-color: #4285f4;
+    padding: 5px 12px;
+    border-radius: 2px;
+}
+
+.sign-in-button:hover{
+    box-shadow: 0px 1px lightgrey;
+}
+
+
+/* 
+================
+   Typography
+================
+*/
