@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Google-Homepage-Clone</title>
 </head>
 <body>
@@ -28,15 +30,68 @@
             <section class="nav-group" id="nav-right">
                 <div class="nav-item"><a href="" class="text-item">Gmail</a></div>
                 <div class="nav-item"><a href="" class="text-item">Images</a></div>
-                <div class="nav-item google-apps-button"><a href="" role="button" id="google-apps"></a></div>
+                <div class="nav-item google-apps-button">
+                    <a href="" role="button" id="google-apps">
+                        <span class="material-icons-outlined material-icons apps">apps</span> 
+                    </a>
+                </div>
                 <div class="nav-item sign-in-button"><a href="" role="button" id="sign-in-text">Sign in</a></div>
             </div>
         </nav>
     </header>
-    <main>
+
+    <main> <!-- do a display flex with center as justification; direction is column-->
+
         <!--the google image-->
-        <!--the search box-->
+        <container class="main-container" id="logo-container">
+            <section>
+                <img src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'>
+            </section> 
+        </container>
+       
+       
+        <container class="main-container">
+            <section id="search-box">
+                <div class="aux-button">
+                    <span class="material-icons-outlined material-icons">search </span>
+                </div>
+                <div>
+                    <input id="search-input" type="text"> <!--make box no border-->
+                </div>
+                <div class="aux-button">
+                    <span class="material-icons-outlined material-icons">mic </span> 
+                </div>
+            </section>
+        </container>
+
         <!--the two buttons at the bottom of the google image-->
+        <container class="main-container">
+            <section id="add-opts-sect">
+                <div class="add-opts">Google Search</div>
+                <div class="add-opts">I'm Feeling Lucky</div>
+            </section> <!--section has shadow at focus-->
+        </container>
     </main>
+
+    <footer>
+        <container>
+        <nav id="footer-nav">
+            <!-- nav left -->
+            <section class="nav-group" id="nav-left">
+                <div class="nav-item"><a href="" class="text-item">Advertising</a></div>
+                <div class="nav-item"><a href="" class="text-item">Business</a></div>
+                <div class="nav-item"><a href="" class="text-item">How Search Works</a></div>
+            </section>
+
+            <!-- nav right -->
+            <section class="nav-group" id="nav-right">
+                <div class="nav-item"><a href="" class="text-item">Privacy</a></div>
+                <div class="nav-item"><a href="" class="text-item">Terms</a></div>
+                <div class="nav-item"><a href="" class="text-item">Settings</a></div>
+            </div>
+        </nav>
+        </container>    
+    </footer>
+
 </body>
 </html>
